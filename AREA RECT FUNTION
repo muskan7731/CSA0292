@@ -1,0 +1,20 @@
+#include<stdio.h>
+void rect();
+void rect()
+{
+    int l=10,b=20,area;
+    area=l*b;
+    printf("Rect area=%d\n", area);
+}
+int main()
+{
+    rect();
+    rect();
+    rect();
+    return 0;
+
+}
+OUTPUT
+Rect area=200
+Rect area=200
+Rect area=200
