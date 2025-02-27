@@ -19,3 +19,8 @@ int main() {
     
     return 0;
 }
+OUTPUT 
+Total days: 600
+Weeks: 85
+Months (approximate, 30 days per month): 20
+Remaining days: 5
