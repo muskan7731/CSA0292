@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int total_days = 600;
+    
+    // Calculate weeks
+    int weeks = total_days / 7;
+    
+    // Calculate months assuming 30 days in a month
+    int months = total_days / 30;
+    
+    // Remaining days after calculating weeks and months
+    int remaining_days = total_days % 7;
+    
+    printf("Total days: %d\n", total_days);
+    printf("Weeks: %d\n", weeks);
+    printf("Months (approximate, 30 days per month): %d\n", months);
+    printf("Remaining days: %d\n", remaining_days);
+    
+    return 0;
+}
