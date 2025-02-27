@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void addTen(int num) {
+    num = num + 10;
+    printf("Inside function: %d\n", num); 
+}
+
+int main() {
+    int x = 5;
+    addTen(x);  
+    printf("Inside main: %d\n", x);  
+}
+Inside function: 15
+Inside main: 5
+
