@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+void printDiamond(int n) {
+    int i, j;
+
+    // Upper half of the diamond
+    for (i = 1; i <= n; i++) {
+        // Print spaces
+        for (j = i; j < n; j++) {
+            printf(" ");
+        }
+        // Print stars
+        for (j = 1; j <= (2 * i - 1); j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    // Lower half of the diamond
+    for (i = n - 1; i >= 1; i--) {
+        // Print spaces
+        for (j = n; j > i; j--) {
+            printf(" ");
+        }
+        // Print stars
+        for (j = 1; j <= (2 * i - 1); j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int n;
+
+    // Ask for user input
+    printf("Enter the number of rows: ");
+    scanf("%d", &n);
+
+    // Print the diamond pattern
+    printDiamond(n);
+
+    return 0;
+} *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
